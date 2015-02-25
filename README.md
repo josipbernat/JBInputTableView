@@ -1,5 +1,6 @@
 # JBInputTableView
 UITableView subclass which handles input text view. Suitable plugin for chat applications.
+It uses [PHFComposeBarView](https://github.com/fphilipe/PHFComposeBarView) as input view, great and easy to customize resizable text view.
 
 ![alt tag](https://cloud.githubusercontent.com/assets/2537227/6373575/ed7ab498-bd0b-11e4-9028-5bc7af3fb639.PNG)
 
