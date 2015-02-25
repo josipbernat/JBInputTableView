@@ -21,12 +21,12 @@ Change your UITableView to JBInputTableView and make it firstResponder in viewDi
 ```objective-c
 - (void)viewDidLoad {
 
-[super viewDidLoad];
-// Do any additional setup after loading the view, typically from a nib.
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
 
-[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
-self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
-[self.tableView becomeFirstResponder];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
+    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
+    [self.tableView becomeFirstResponder];
 }
 ```
 
