@@ -30,6 +30,8 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIKeyboardWillHideNotification
                                                   object:nil];
+    
+    _composeBarView.delegate = nil;
 }
 
 #pragma mark - UIResponder

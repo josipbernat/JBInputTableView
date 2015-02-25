@@ -6,7 +6,7 @@ It uses [PHFComposeBarView](https://github.com/fphilipe/PHFComposeBarView) as in
 
 ### Installation with CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like JBMessage in your projects.
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like JBInputTableView in your projects.
 
 #### Podfile
 
