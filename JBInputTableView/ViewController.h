@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class JBInputTableView;
+
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet JBInputTableView *tableView;
 
 @end
 

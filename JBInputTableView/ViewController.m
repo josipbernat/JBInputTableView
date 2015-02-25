@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JBInputTableView.h"
 
 @interface ViewController ()
 
