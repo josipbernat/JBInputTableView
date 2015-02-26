@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "PHFComposeBarView.h"
+#import "JBInputTableViewDelegate.h"
 
 @interface JBInputTableView : UITableView  <PHFComposeBarViewDelegate>
 
 @property (strong, nonatomic) PHFComposeBarView *composeBarView;
+@property (weak, nonatomic) id<JBInputTableViewDelegate> inputDelegate;
 
 @end

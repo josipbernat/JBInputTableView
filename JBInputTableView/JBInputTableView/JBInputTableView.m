@@ -143,12 +143,14 @@
 }
 
 - (void)composeBarViewDidPressButton:(PHFComposeBarView *)composeBarView {
-    
+
+    if ([(NSObject *)self.inputDelegate respondsToSelector:@selector(inputTableView:didSelectSendButton:)]) {
+        [self.inputDelegate  inputTableView:self didSelectSendButton:composeBarView.button];
+    }
 }
 
 - (void)composeBarViewDidPressUtilityButton:(PHFComposeBarView *)composeBarView {
     
 }
-
 
 @end
