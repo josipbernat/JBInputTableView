@@ -15,4 +15,12 @@
 @property (strong, nonatomic) PHFComposeBarView *composeBarView;
 @property (weak, nonatomic) id<JBInputTableViewDelegate> inputDelegate;
 
+#pragma mark - Keyboard Scroll Adjustment
+/**
+ *  Index path to which tableView will be scrolled once keyboard is up. Default is last row in last section of tableView. If you provide nil no scroll will happen.
+ *
+ *  @return NSIndexPath of desired row in tableView.
+ */
+- (NSIndexPath *)indexPathWhenKeyboardBecomesVisible;
+
 @end

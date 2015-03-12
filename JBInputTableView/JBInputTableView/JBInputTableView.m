@@ -85,15 +85,11 @@
     self.contentInset = contentInsets;
     self.scrollIndicatorInsets = contentInsets;
     
-    NSInteger sections = [self numberOfSections];
-    if (sections) {
-        NSInteger section = sections - 1;
-        if ([self numberOfRowsInSection:section]) {
-            
-            [self scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[self numberOfRowsInSection:section] - 1 inSection:section]
-                        atScrollPosition:UITableViewScrollPositionTop
-                                animated:YES];
-        }
+    NSIndexPath *indexPath = [self indexPathWhenKeyboardBecomesVisible];
+    if (indexPath) {
+        [self scrollToRowAtIndexPath:indexPath
+                    atScrollPosition:UITableViewScrollPositionTop
+                            animated:YES];
     }
 }
 
@@ -102,6 +98,21 @@
     UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0f, 0.0f, CGRectGetHeight(_composeBarView.frame), 0.0f);
     self.contentInset = contentInsets;
     self.scrollIndicatorInsets = contentInsets;
+}
+
+#pragma mark - Keyboard Scroll Adjustment
+
+- (NSIndexPath *)indexPathWhenKeyboardBecomesVisible {
+    
+    NSInteger sections = [self numberOfSections];
+    if (sections) {
+        NSInteger section = sections - 1;
+        if ([self numberOfRowsInSection:section]) {
+            return [NSIndexPath indexPathForRow:[self numberOfRowsInSection:section] - 1 inSection:section];
+        }
+        return nil;
+    }
+    return nil;
 }
 
 #pragma mark - Constraints
