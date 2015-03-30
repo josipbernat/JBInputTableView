@@ -23,4 +23,10 @@
  */
 - (NSIndexPath *)indexPathWhenKeyboardBecomesVisible;
 
+#pragma mark - Text
+/**
+ *  Removes text from input view.
+ */
+- (void)clearInputText;
+
 @end

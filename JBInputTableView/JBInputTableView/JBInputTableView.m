@@ -115,6 +115,13 @@
     return nil;
 }
 
+#pragma mark - Text
+
+- (void)clearInputText {
+    
+    self.composeBarView.text = @"";
+}
+
 #pragma mark - Constraints
 
 - (NSLayoutConstraint *)__heightConstraint {
