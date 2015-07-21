@@ -7,7 +7,7 @@ DEPENDENCIES:
   - PHFComposeBarView (~> 2.0)
 
 SPEC CHECKSUMS:
-  PHFComposeBarView: 0fa52137ecb23725d219dc90cf77c4c95aa29d05
-  PHFDelegateChain: f4d5a2847960b3dd16fc2f2196833f3a66704745
+  PHFComposeBarView: ceb26dd5a1e9a262c9e0ec3fd1dc12dbfff41c75
+  PHFDelegateChain: 491f9cd8a3fb8761f390ff05f74a0e168d48d285
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.38.0

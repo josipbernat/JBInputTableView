@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-PHFComposeBarView.xcscheme</key>
+		<key>PHFComposeBarView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-PHFDelegateChain.xcscheme</key>
+		<key>PHFDelegateChain.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9A292A801A9807EDBCFD72D6</key>
+		<key>245FDE1970551A4473C49CB285A49093</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABA8A96BD693EF53C5C9FC9B</key>
+		<key>6565390013B8542E2B00225ABEE1EBC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F172BE3A9D7911AA6BD997C4</key>
+		<key>97305000082F67075102EA461520AA95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
